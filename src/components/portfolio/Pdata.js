@@ -1,6 +1,6 @@
 import IMG1 from '../../images/E-Commerice.mp4'
 import IMG2 from '../../images/Food Delivery.mp4'
-import IMG3 from '../../images/News-Website.mp4'
+import IMG3 from '../../images/News Website.mp4'
 import IMG4 from '../../images/Open-Material.mp4'
 import IMG5 from '../../images/Real-Estate.mp4'
 import IMG6 from '../../images/Travel.mp4'
