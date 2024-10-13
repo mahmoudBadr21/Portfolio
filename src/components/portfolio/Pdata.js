@@ -46,7 +46,7 @@ const Pdata = [
     image: IMG6,
     title: 'Travel.',
     github: 'https://github.com/mahmoudBadr21/travel..git',
-    demo: 'https://bonik-e-commerice.vercel.app/',
+    demo: 'https://travel-woad-phi.vercel.app/',
   },
 ]
 
