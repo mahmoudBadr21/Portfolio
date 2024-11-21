@@ -20,28 +20,28 @@ const About = () => {
               <article className='about__card'>
                 <i className="fa-solid fa-award about__icon"></i>
                 <h5>Experience</h5>
-                <small>3+ Years Working</small>
+                <small>Junior</small>
               </article>
 
               <article className='about__card'>
                 <i className="fa-solid fa-users about__icon"></i>
                 <h5>Clients</h5>
-                <small>200+ Worldwide</small>
+                <small>10+ Worldwide</small>
               </article>
 
               <article className='about__card'>
                 <i className="fa-solid fa-folder about__icon"></i>
                 <h5>Projects</h5>
-                <small>50+ Completed</small>
+                <small>20+ Completed</small>
               </article>
 
             </div>
 
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Eos ipsa nam quis dolorum tempore libero accusantium.
-              Obcaecati incidunt voluptas nesciunt eius,
-              itaque qui amet in eligendi repellendus placeat officia? Necessitatibus.
+              A junior Front-End Developer specializing in React.js,
+              focused on enhancing my skills in building interactive web applications
+              using HTML, CSS, and JavaScript. I am passionate about continuous learning
+              and collaborating within a team to deliver exceptional user experiences.
             </p>
 
             <a href="#contact" className='btn btn-primary'>Let&apos; Talk</a>
