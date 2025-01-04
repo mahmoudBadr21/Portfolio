@@ -5,6 +5,7 @@ import IMG4 from '../../images/Open Material.mp4'
 import IMG5 from '../../images/Real Estate.mp4'
 import IMG6 from '../../images/Travel.mp4'
 import IMG7 from '../../images/Art Space.mp4'
+import IMG8 from '../../images/Zaher HR.mp4'
 
 const Pdata = [
   {
@@ -55,6 +56,13 @@ const Pdata = [
     title: 'فضاء الفن',
     github: 'https://github.com/mahmoudBadr21/Art-Space.git',
     demo: 'https://art-space-wine.vercel.app/',
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title: 'Zaher HR',
+    github: 'https://github.com/mahmoudBadr21/Zaher-HR.git',
+    demo: 'https://zaher-hr.vercel.app/',
   },
 ]
 

@@ -14,9 +14,11 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert("SUCCESS")
+          form.current.reset();
         },
         (error) => {
+          alert("FAILED...")
           console.log('FAILED...', error.text);
         },
       );
