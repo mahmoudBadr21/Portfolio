@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import './contact.css'
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const Contact = ({ setPopup, setPopupContent }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,11 +14,13 @@ const Contact = () => {
       })
       .then(
         () => {
-          alert("SUCCESS")
+          setPopup(true)
+          setPopupContent("Send Successfully, I will contact with you as soon as possible.")
           form.current.reset();
         },
         (error) => {
-          alert("FAILED...")
+          setPopup(true)
+          setPopupContent("Send failed, please check network connection.")
           console.log('FAILED...', error.text);
         },
       );

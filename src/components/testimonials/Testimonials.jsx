@@ -13,7 +13,7 @@ const Testimonials = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
   }
 
   return (
@@ -26,15 +26,13 @@ const Testimonials = () => {
           {
             Tdata.map((value, index) => {
               return(
-                <>
-                  <article className='testimonial' key={index}>
-                    <div className="client__avatar">
-                      <img src={value.image} alt={value.id} width='unset' height='unset' />
-                    </div>
-                    <h5 className="client__name">{value.name}</h5>
-                    <small className='client__review'>{value.review}</small>
-                  </article>
-                </>
+                <article className='testimonial' key={index}>
+                  <div className="client__avatar">
+                    <img src={value.image} alt={value.id} width='unset' height='unset' />
+                  </div>
+                  <h5 className="client__name">{value.name}</h5>
+                  <small className='client__review'>{value.review}</small>
+                </article>
               )
             })
           }

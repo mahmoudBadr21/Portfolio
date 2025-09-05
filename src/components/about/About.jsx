@@ -1,6 +1,7 @@
-import React from 'react'
-import './about.css'
-import ME from '../../images/me5.jpg'
+import React from "react";
+import { motion } from "framer-motion";
+import "./about.css";
+import ME from "../../images/me5.jpg";
 
 const About = () => {
   return (
@@ -9,48 +10,99 @@ const About = () => {
         <h5>Get To Know</h5>
         <h2>About Us</h2>
         <div className="container about__container">
-          <div className="about__me">
+          <motion.div
+            className="about__me"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.02, duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="about__me-image">
-              <img src={ME} alt='#' width={320} height={400} />
+              <img src={ME} alt="#" width={320} height={400} />
             </div>
-          </div>
+          </motion.div>
 
-          <div className="about__content">
+          <motion.div
+            className="about__content"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.02, duration: 0.4 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             <div className="about__cards">
-              <article className='about__card'>
+              <motion.article
+                className="about__card"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ delay: 0.02, duration: 0.2 }}
+                variants={{
+                  hidden: { opacity: 0, y: -50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+              >
                 <i className="fa-solid fa-award about__icon"></i>
                 <h5>Experience</h5>
                 <small>Junior</small>
-              </article>
+              </motion.article>
 
-              <article className='about__card'>
+              <motion.article
+                className="about__card"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ delay: 0.02, duration: 0.4 }}
+                variants={{
+                  hidden: { opacity: 0, y: -50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+              >
                 <i className="fa-solid fa-users about__icon"></i>
                 <h5>Clients</h5>
                 <small>10+ Worldwide</small>
-              </article>
+              </motion.article>
 
-              <article className='about__card'>
+              <motion.article
+                className="about__card"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ delay: 0.02, duration: 0.6 }}
+                variants={{
+                  hidden: { opacity: 0, y: -50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+              >
                 <i className="fa-solid fa-folder about__icon"></i>
                 <h5>Projects</h5>
                 <small>20+ Completed</small>
-              </article>
-
+              </motion.article>
             </div>
 
             <p>
-              A junior Front-End Developer specializing in React.js,
-              focused on enhancing my skills in building interactive web applications
-              using HTML, CSS, and JavaScript. I am passionate about continuous learning
-              and collaborating within a team to deliver exceptional user experiences.
+              A junior Front-End Developer specializing in React.js, focused on
+              enhancing my skills in building interactive web applications using
+              HTML, CSS, and JavaScript. I am passionate about continuous
+              learning and collaborating within a team to deliver exceptional
+              user experiences.
             </p>
 
-            <a href="#contact" className='btn btn-primary'>Let&apos; Talk</a>
-
-          </div>
+            <a href="#contact" className="btn btn-primary">
+              Let&apos; Talk
+            </a>
+          </motion.div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

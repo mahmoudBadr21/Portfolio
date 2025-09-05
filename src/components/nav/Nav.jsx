@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import './nav.css'
 
 const Nav = () => {
@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <a href="#" className={activeNav === '#' ? "active" : ""} 
+        <a href="#" className={activeNav === '#' ? "active" : ""}
         onClick={() => setActiveNav("#")}>
           <i className='fas fa-home'></i>
         </a>

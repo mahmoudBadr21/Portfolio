@@ -20,6 +20,7 @@
 .content__option:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 .content__option-icon {
   font-size: 1.5rem;
@@ -49,6 +50,11 @@ textarea {
   border: 2px solid var(--color-primary-variant);
   resize: none;
   color: var(--color-white);
+  transition: var(--transition);
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 /* ============ MEDIA QURIES (MEDUIM DEVICES)================ */
 @media screen and (max-width: 1024px) {

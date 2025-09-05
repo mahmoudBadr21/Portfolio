@@ -6,6 +6,8 @@ import IMG5 from '../../images/Real Estate.mp4'
 import IMG6 from '../../images/Travel.mp4'
 import IMG7 from '../../images/Art Space.mp4'
 import IMG8 from '../../images/Zaher HR.mp4'
+import IMG9 from '../../images/EVOGYM.mp4'
+import IMG10 from '../../images/ShoesLuxe.mp4'
 
 const Pdata = [
   {
@@ -63,6 +65,20 @@ const Pdata = [
     title: 'Zaher HR',
     github: 'https://github.com/mahmoudBadr21/Zaher-HR.git',
     demo: 'https://zaher-hr.vercel.app/',
+  },
+  {
+    id: 9,
+    image: IMG9,
+    title: 'EVO Gym',
+    github: 'https://github.com/mahmoudBadr21/Evogym.git',
+    demo: 'https://evogym-mauve.vercel.app/',
+  },
+  {
+    id: 10,
+    image: IMG10,
+    title: 'ShoesLuxe-E-Commerce',
+    github: 'https://github.com/mahmoudBadr21/Shoes-E-Commerce.git',
+    demo: 'https://shoes-e-commerce-sigma.vercel.app/',
   },
 ]
 

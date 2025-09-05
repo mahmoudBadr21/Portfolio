@@ -1,0 +1,21 @@
+.message-popup {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: grid;
+}
+.message-popup-container {
+  place-self: center;
+  width: max(23vw, 330px);
+  color: #fff;
+  background-color: var(--color-bg-variant);
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px 1px rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.message-popup-container p {
+  margin-bottom: 15px;
+}
