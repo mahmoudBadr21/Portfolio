@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 import './portfolio.css'
 import Pdata from './Pdata'
@@ -27,7 +26,7 @@ const Portfolio = () => {
                   }}
                 >
                   <div className="portfolio__item-image">
-                    <video src={value.image} autoPlay loop muted></video>
+                    <video src={value.image} autoPlay loop muted preload="metadata" loading="lazy"></video>
                   </div>
                   <h3>{value.title}</h3>
                   <div className="portfolio__item-cta">

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import "./about.css";
 import ME from "../../images/me5.jpg";
@@ -22,7 +21,7 @@ const About = () => {
             }}
           >
             <div className="about__me-image">
-              <img src={ME} alt="#" width={320} height={400} />
+              <img src={ME} alt="#" width={320} height={400} loading="lazy" />
             </div>
           </motion.div>
 

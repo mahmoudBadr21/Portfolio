@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import cv from "../../assets/cv.pdf"
 const CTA = () => {

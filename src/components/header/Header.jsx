@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 import './header.css'
 import CTA from './CTA'
@@ -29,7 +28,7 @@ const Header = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <img src={ME} alt="me" width="320" height="400" />
+            <img src={ME} alt="me" width="320" height="400" loading="lazy" />
           </motion.div>
 
           <motion.a

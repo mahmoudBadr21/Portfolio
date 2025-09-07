@@ -1,7 +1,6 @@
-'use client'
 import './App.css'
 import './all.min.css'
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from './components/header/Header';
 import Nav from './components/nav/Nav';
 import About from './components/about/About';
