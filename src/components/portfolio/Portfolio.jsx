@@ -26,7 +26,7 @@ const Portfolio = () => {
                   }}
                 >
                   <div className="portfolio__item-image">
-                    <video src={value.image} autoPlay loop muted preload="metadata" loading="lazy"></video>
+                    <video src={value.image} autoPlay loop muted></video>
                   </div>
                   <h3>{value.title}</h3>
                   <div className="portfolio__item-cta">

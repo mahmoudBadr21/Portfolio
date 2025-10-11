@@ -21,7 +21,7 @@ const About = () => {
             }}
           >
             <div className="about__me-image">
-              <img src={ME} alt="#" width={320} height={400} loading="lazy" />
+              <img src={ME} alt="#" width={320} height={400} />
             </div>
           </motion.div>
 

@@ -28,7 +28,7 @@ const Header = () => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <img src={ME} alt="me" width="320" height="400" loading="lazy" />
+            <img src={ME} alt="me" width="320" height="400" />
           </motion.div>
 
           <motion.a
